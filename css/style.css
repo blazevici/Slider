@@ -1,0 +1,64 @@
+body {
+    background-color: #7f8c8d;
+}
+
+.title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
+    text-align: center;
+    grid-area: b;
+    color: white;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+.title-container {
+    grid-column-start: 1;
+    grid-column-end: 10;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+        "a a a b b b c c c";
+    overflow: auto;
+}
+
+.window {
+    grid-area: b;
+    grid-row-start: 2;
+    align-self: center;
+    justify-self: center;
+    width: auto;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px #565656;
+}
+
+.images img{
+    display: none;
+    width: auto;
+    height: 400px;
+    align-self: center;
+    justify-self: center;
+}
+
+.images img.active {
+    display: inline-block;
+    align-self: center;
+    justify-self: center;
+}
+
+.arrows {
+    grid-area: b;
+    grid-row-start: 7;
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+}
