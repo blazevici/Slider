@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('div.hidden').fadeIn(800).removeClass('hidden');
+	$('.hidden').fadeIn(800).removeClass('hidden');
 });
 
 var container1 = $('#carousel1');
